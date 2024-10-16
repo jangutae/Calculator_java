@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         // Calculator 인스턴스 생성
-        Calculator.lv2rpoject.Calculator.lv2rpoject.Calculator calc = new Calculator.lv2rpoject.Calculator.lv2rpoject.Calculator();
+        Calculator.calc = new Calculator();
         Scanner sc = new Scanner(System.in);
         ArrayList<Double> setcheck = calc.getDoubleList();
 
@@ -42,10 +42,8 @@ public class App {
 
 
 
-        }
-        for (int i=0; i<setcheck.size(); i++) {
-            if (i == 2) {
-                setcheck.set(i, setcheck.get(i)*2);
+        
+       
             }
         }
         System.out.println(setcheck);
