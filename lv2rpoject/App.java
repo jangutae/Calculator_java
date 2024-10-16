@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         // Calculator 인스턴스 생성
-        Calculator.calc = new Calculator();
+        Calculator calc = new Calculator();
         Scanner sc = new Scanner(System.in);
         ArrayList<Double> setcheck = calc.getDoubleList();
 
@@ -38,17 +38,14 @@ public class App {
                 flag = false;
             } else if (keepGoing.equals("remove")) {
                 calc.removeAnswer();
-            } 
-
-
-
-        
-       
             }
+
+
         }
-        System.out.println(setcheck);
     }
 }
+
+
 
 
 
